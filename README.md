@@ -58,16 +58,16 @@ A high-level overview of the project's directory structure:
 
 ```
 SpecSenseAI/
-├── .gitignore
-├── app.py             # Main application file (e.g., Flask or Streamlit entry point)
-├── requirements.txt   # Python dependencies
-├── static/            # CSS, JavaScript, and other static assets
-│   └── css/
-│       └── style.css
-├── templates/         # HTML templates (if using Flask/Django)
-│   └── index.html
-├── .env               # For storing API keys and environment variables
-└── README.md
+├── data/                  # Placeholder for catalog data, datasets, etc.
+├── pipelines/             # Core logic for the suggestion pipeline
+│   ├── executor.py        # Contains core_executor, which runs the pipeline
+│   ├── exceptions.py      # Custom exception classes (NoRecordsFound, etc.)
+│   └── ...
+├── app.py                 # Main Streamlit application entry point
+├── config.py              # Configuration variables and settings
+├── render.py              # Functions to render the final dashboard/output
+├── utils.py               # Helper functions (e.g., init_env)
+└── requirements.txt       # Python dependencies
 ```
 
 ## Getting Started
