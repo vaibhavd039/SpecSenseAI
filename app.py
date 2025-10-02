@@ -19,9 +19,5 @@ if st.button("Submit"):
         respose = core_executor.execute_core_pipeline(user_query= user_query, user_id= user_id, k =3)
         data = json.dumps(respose.model_dump(exclude_none=True))
         render.buld_dashboard(json.loads(data))
-    except NoRecordsFound as e:
-        st.write(e.message)
-    except NoMatchingProductsFound as e:
-        st.write(e.message)
     except Exception as e:
-        st.write("Something went wrong, please try again later.")
+        st.write(str(e))

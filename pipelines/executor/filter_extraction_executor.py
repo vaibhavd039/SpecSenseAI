@@ -9,8 +9,9 @@ from pipelines.config import PRODCUCT_DATA_FILE, CUSTOMER_DATA_FILE
 from pipelines.utils.data_loader_util import load_data
 from pipelines.utils.filter_sanitiser import enrich_filters_from_user_data
 from pipelines.utils.data_filter_util import filter_products_using_hard_filters
-from pipelines.exceptions import NoRecordsFound, NoMatchingProductsFound
 from functools import lru_cache
+from pipelines.exceptions.NoRecordsFound import NoRecordsFound
+from pipelines.exceptions.NoMatchingProductsFound import NoMatchingProductsFound    
 
 
 
