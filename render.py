@@ -19,12 +19,6 @@ def create_speedometer(score):
     return fig
 
 def buld_dashboard(data): 
-    # --- FIX 1: Title centered ---
-    st.markdown(
-        "<h1 style='text-align: center;'>Ranked Products Dashboard - Enhanced Comparison View</h1>", 
-        unsafe_allow_html=True
-    )
-
     products = data["ranked_products"]
     product_names = [p['name'] for p in products]
 
