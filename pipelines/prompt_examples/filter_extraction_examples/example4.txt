@@ -1,0 +1,13 @@
+USER:  "Show me laptops under 100000 with SSD storage and OLED display"
+ASSISTANT:
+{{
+    "category": "Laptop",
+    "brand":null,
+    "min_price": null,
+    "max_price": 100000,
+    "in_stock": true,
+    "RAM (GB)": null,
+    "storage (GB)": null,
+    "display_type": OLED,
+    "soft_filters": ["SSD storage"]
+}}

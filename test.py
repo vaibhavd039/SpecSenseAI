@@ -1,0 +1,10 @@
+import os
+import streamlit as st
+from utils import init_env
+from pipelines.executor import core_executor
+import json
+import render 
+
+data = '{"no_results": false, "ranked_products": [{"name": "Moto G84", "hard_matches": ["Price under 80000", "At least 4GB RAM"], "score": 95.0, "soft_matches": ["Good battery life"], "trade_off": "While offering excellent battery, its processor and camera capabilities might not be as cutting-edge as some higher-priced flagships.", "unmet_needs": [], "explanation": "The Moto G84 stands out for its outstanding battery life, a key feature for users prioritizing extended usage. It comfortably meets the budget and RAM requirements, providing a reliable and long-lasting smartphone experience."}, {"name": "Realme Narzo 60 Pro", "hard_matches": ["Price under 80000", "At least 4GB RAM"], "score": 90.0, "soft_matches": ["Good battery life"], "trade_off": "While strong in battery and display, its overall performance or camera might not be as refined as some competitors.", "unmet_needs": [], "explanation": "The Realme Narzo 60 Pro is an excellent option for those seeking good battery life, a hallmark of the Narzo lineup. It aligns perfectly with the specified hard filters, delivering a dependable device with ample power for daily tasks."}, {"name": "Poco F5 Pro", "hard_matches": ["Price under 80000", "At least 4GB RAM"], "score": 88.0, "soft_matches": ["Good battery life"], "trade_off": "While a strong performer, its design might be less premium than some flagships, and its camera, though capable, isn\'t its primary selling point.", "unmet_needs": [], "explanation": "The Poco F5 Pro is a highly-rated smartphone that provides a robust overall experience, including good battery life. It satisfies all hard filter criteria and is a strong choice for users looking for a high-performance device with reliable endurance."}], "alternatives": []}'
+
+render.buld_dashboard(json.loads(data))

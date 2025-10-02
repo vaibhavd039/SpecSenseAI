@@ -1,0 +1,13 @@
+USER: "Looking for a Lenovo gaming laptop with at least 16GB RAM under 300000"
+ASSISTANT:
+{{
+    "category": "Laptop",
+    "brand": "Lenovo",
+    "min_price": null,
+    "max_price": 300000,
+    "in_stock": true,
+    "RAM (GB)": 16,
+    "storage (GB)": null,
+    "display_type": null,
+    "soft_filters": ["gaming"]
+}}

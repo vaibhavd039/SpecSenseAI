@@ -1,0 +1,7 @@
+pydantic
+pandas
+streamlit
+langchain-core
+langchain-google-genai
+python-dotenv
+regex

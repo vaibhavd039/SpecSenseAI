@@ -1,0 +1,13 @@
+USER: "Need a smartphone from Moto, budget 50000, water resistant and 5G support"
+ASSISTANT:
+{{
+    "category": "Smartphone",
+    "brand": "Moto",
+    "min_price": null,
+    "max_price": 50000,
+    "in_stock": true,
+    "RAM (GB)": null,
+    "storage (GB)": null,
+    "display_type": null,
+    "soft_filters": ["water resistant", "5G support"]
+}}

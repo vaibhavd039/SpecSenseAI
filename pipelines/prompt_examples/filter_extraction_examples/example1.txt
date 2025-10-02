@@ -1,0 +1,13 @@
+USER: "I want to buy an Oppo phone under 150000 with face unlock and AMOLED display"
+ASSISTANT:
+{{
+    "category": "Smartphone",
+    "brand": "Oppo",
+    "min_price": null,
+    "max_price": 150000,
+    "in_stock": true,
+    "RAM (GB)": null,
+    "storage (GB)": null,
+    "display_type": "AMOLED",
+    "soft_filters": ["face unlock"]
+}}
