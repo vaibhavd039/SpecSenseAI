@@ -122,8 +122,26 @@ st.markdown(html_close, unsafe_allow_html=True)
 # --- Display Submission Result (Optional) ---
 if submitted:
     try:
-        respose = core_executor.execute_core_pipeline(user_query= user_query, user_id= user_id, k =3)
+        # placeholder is like a "slot" where we can put/remove stuff
+        placeholder = st.empty()
+
+        # show your gif (local file or url)
+        placeholder.image("cosmetic/loader.gif", caption="Doing the heavy lifting...")
+
+        # run the expensive job
+        respose = core_executor.execute_core_pipeline(
+            user_query=user_query,
+            user_id=user_id,
+            k=3
+        )
+
+        # clear the gif
+        placeholder.empty()
+
+        # render results
         data = json.dumps(respose.model_dump(exclude_none=True))
         render.buld_dashboard(json.loads(data))
+
     except Exception as e:
-        st.write(str(e))
+        placeholder.empty()
+        st.error(str(e))

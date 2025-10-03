@@ -17,7 +17,7 @@ def get_ranking_prompt():
             
             "Task:\n"
             "1) Rank the products according to how well they match the SOFT preferences (soft_filters) and since all {hard_filters} are already satisfied just mention those"
-            "2) Consider User Preference, Tech Savviness and User Interest to rank those products and provide score out of 100."
+            "2) If Provided, consider User Preference, Tech Savviness and User Interest to rank those products and provide score out of 100."
             "2) If no products fully satisfy, suggest alternatives and list violated soft filters.\n\n"
             "3) Return satisfied hard_matches, soft_matches, trade-offs, unmet needs in more human readable form.\n\n"
             "Output format requirement:\n"
